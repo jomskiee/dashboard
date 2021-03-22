@@ -16,7 +16,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-
+Route::get('generate', function (){
+    \Illuminate\Support\Facades\Artisan::call('storage:link');
+    echo 'ok';
+});
 Auth::routes();
 Route::get('/dashboard', [App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard'); 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
