@@ -34,9 +34,9 @@
                         <form action="{{ route('file.destroy',  $file) }}" method="POST">
                             @csrf
                             {{ method_field('DELETE') }}
-                            <button type="submit" class="btn btn-sm btn-danger  mx-5 px-5"> Delete Product</button>
+                            <button type="submit" class="btn btn-sm btn-danger  mx-5 px-5"> Delete File</button>
                         </form>
-                        <a href="{{ route('file.edit', $file) }}" ><button type="button" class="btn btn-sm btn-info mx-5 px-5 "> Edit Product</button></a>
+                        <a href="{{ route('file.edit', $file) }}" ><button type="button" class="btn btn-sm btn-info mx-5 px-5 "> Edit File</button></a>
                                
                     </div>
                 </div>              
