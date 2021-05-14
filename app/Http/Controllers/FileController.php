@@ -18,7 +18,7 @@ class FileController extends Controller
     public function index()
     {
         $files = File::all();
-        return view('act2.fileIndex')->with([
+        return view('act2.index')->with([
             'files'=> $files
         ]);
     }
@@ -30,7 +30,7 @@ class FileController extends Controller
      */
     public function create(File $file)
     {
-        return view('act2.addFile')->with([
+        return view('act2.add')->with([
             'file'=> $file,
         ]);
     }
@@ -75,7 +75,7 @@ class FileController extends Controller
      */
     public function show(File $file)
     {
-        return view('act2.show')->with([
+        return view('act2.view')->with([
             'file' => $file,
         ]);
     }
@@ -88,7 +88,7 @@ class FileController extends Controller
      */
     public function edit(File $file)
     {
-        return view('act2.edit')->with([
+        return view('act2.editfile')->with([
             'file' => $file,
         ]);
     }

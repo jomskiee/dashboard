@@ -63,7 +63,7 @@
         <div class="bg-light border-right" id="sidebar-wrapper">
         <div class="sidebar-heading">Laravel 8 </div>
         <div class="list-group list-group-flush">
-            <a href="{{ route('product.index') }}" class="list-group-item list-group-item-action bg-light">Activity 1 - CRUD</a>
+            <a href="#" class="list-group-item list-group-item-action bg-light">Activity 1 - CRUD</a>
             <a href="{{ route('file.index') }}" class="list-group-item list-group-item-action bg-light">Activity 2 - Uploading</a>
             <a href="#" class="list-group-item list-group-item-action bg-light">Activity 3</a>
             <a href="#" class="list-group-item list-group-item-action bg-light">Activity 4</a>

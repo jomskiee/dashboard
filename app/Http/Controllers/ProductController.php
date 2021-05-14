@@ -20,7 +20,7 @@ class ProductController extends Controller
     public function index()
     {
         $products = Products::all();
-        return view('act1.productIndex')->with([
+        return view('act1.index')->with([
             'products'=> $products
         ]);
     }
@@ -33,7 +33,7 @@ class ProductController extends Controller
     public function create(Products $product)
     {
         $product = Products::find($product);
-        return view('act1.addproduct')->with([
+        return view('act1.add')->with([
             'product'=> $product,
         ]);
     }
@@ -72,7 +72,7 @@ class ProductController extends Controller
      */
     public function show(Products $product)
     {
-        return view('act1.show')->with([
+        return view('act1.view')->with([
             'product' => $product,
         ]);
     }
@@ -85,7 +85,7 @@ class ProductController extends Controller
      */
     public function edit(Products $product)
     {
-        return view('act1.edit')->with([
+        return view('act1.editprod')->with([
             'product'=> $product,
         ]);
     }
