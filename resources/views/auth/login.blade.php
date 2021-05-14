@@ -30,7 +30,7 @@
                             <div class="col-md-6">
                               <div class="form-group">
                                 <label class="bmd-label-floating">{{ __('Password') }}</label>
-                                <input id="password" type="text" class="form-control @error('password') is-invalid @enderror" name="password" value="{{ old('password') }}"  
+                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" value="{{ old('password') }}"  
                                 aria-describedby="basic-addon2" autocomplete="password" required autofocus >
                                 @error('password')
                                     <span class="invalid-feedback" role="alert">
