@@ -20,7 +20,7 @@
                 </div>
                 <div class="col-md-6-offset-4">
                     {{-- <embed src="/storage/{{ $file->path }}" type="application/pdf" width="100%" height="600px" />--}}
-                    <a href="/storage/{{ $file->path }}" class="btn btn-round btn-success">Open File </a>
+                    <a href="{{url('/')}}/storage/{{ $file->path }}" class="btn btn-round btn-success">Open File </a>
                    {{--  <iframe src="{{ url('storage/'. $file->path) }}" frameborder="0" style="width: 100%"></iframe> --}}  
                </div>  
             </div>
